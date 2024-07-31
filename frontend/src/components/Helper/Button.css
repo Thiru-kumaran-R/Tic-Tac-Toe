@@ -1,0 +1,40 @@
+.btn {
+  height: 80px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.8rem;
+}
+
+.btn span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #0b474e;
+}
+
+.title {
+  color: #0b474e;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.score {
+  color: #0b474e;
+  border: none;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 400px) {
+  .btn {
+    width: 110px;
+  }
+}

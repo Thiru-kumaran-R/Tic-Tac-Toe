@@ -1,0 +1,120 @@
+.main {
+  width: 350px;
+  background-color: #1f3640;
+  border-radius: 1rem;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 3rem;
+}
+#x {
+  width: 45px;
+  animation: scale 2s linear infinite 1s;
+  margin-right: 2rem;
+}
+
+#o {
+  width: 45px;
+  animation: rotate 2s linear infinite 3s;
+}
+
+@keyframes rotate {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.5;
+  }
+  75% {
+    scale: 2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    scale: 1;
+    transform: rotate(0deg);
+  }
+  50% {
+    scale: 1.5;
+    transform: rotate(270deg);
+  }
+  75% {
+    scale: 2;
+    transform: rotate(360deg);
+  }
+  100% {
+    scale: 1;
+    transform: rotate(0deg);
+    animation-delay: 2s;
+  }
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.join-room,
+.create-room {
+  width: 80%;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+
+.join-room > input {
+  height: 30px;
+  width: 80%;
+  border: none;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 2rem auto 1rem auto;
+  outline: none;
+  font-size: 1rem;
+}
+
+.join-room button {
+  height: 34px;
+  width: 80%;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f2b137;
+  color: #21333c;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  margin: 1rem auto 2rem auto;
+  cursor: pointer;
+}
+
+.or {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.create-room > button {
+  height: 34px;
+  width: 80%;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f2b137;
+  color: #21333c;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  margin: 1rem auto 4rem auto;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 420px) {
+  .container {
+    width: 320px;
+  }
+}
